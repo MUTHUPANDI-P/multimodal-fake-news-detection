@@ -8,16 +8,13 @@ import pytesseract
 import requests
 import base64
 from bs4 import BeautifulSoup
-#import os
 from dotenv import load_dotenv
 
 # ================== SETUP ==================
-#pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
 load_dotenv()
 
-#client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 client = Groq(api_key=st.secrets["GROQ_API_KEY"])
-
 
 st.set_page_config(
     page_title="Multimodal & Multilingual Fake News Detection",
@@ -289,3 +286,4 @@ if analyze:
 
         except Exception as e:
             st.error(f"❌ API Error: {e}")
+
