@@ -1,0 +1,7 @@
+tesseract-ocr
+tesseract-ocr-eng
+tesseract-ocr-tam
+tesseract-ocr-hin
+tesseract-ocr-tel
+tesseract-ocr-kan
+tesseract-ocr-mal
