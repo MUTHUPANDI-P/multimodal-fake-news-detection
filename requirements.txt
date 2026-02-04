@@ -1,0 +1,10 @@
+streamlit
+groq
+langdetect
+pillow
+opencv-python-headless
+numpy
+pytesseract
+requests
+beautifulsoup4
+python-dotenv
